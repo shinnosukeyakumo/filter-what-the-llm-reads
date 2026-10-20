@@ -24,7 +24,7 @@ Usage:
     inbound authorizer accepts). Without it, checks 1 and 2 fall back to
     deriving tool names from the target definitions, which is close but not
     identical: the policy engine may be hiding tools from tools/list, and
-    that is exactly finding 2.
+    that is exactly finding 2 (see docs/findings.md).
 
 IAM permissions needed, all read-only:
     bedrock-agentcore:GetGateway, ListGatewayTargets, GetGatewayTarget

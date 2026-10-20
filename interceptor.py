@@ -100,7 +100,7 @@ def lambda_handler(event, context):
 
     # tools/list is NOT routed through here in a way you can filter;
     # list-time narrowing is the policy engine's job, and it leaves no
-    # decision record of its own. See README, finding 2.
+    # decision record of its own. See docs/findings.md, finding 2.
     if body.get("method") != "tools/call":
         return _passthrough(body)
 
